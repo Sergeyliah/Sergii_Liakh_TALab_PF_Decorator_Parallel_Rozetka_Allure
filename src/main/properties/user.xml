@@ -1,0 +1,5 @@
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="amountOfItems">1</entry>
+   <entry key="totalPrice">50000</entry>
+</properties>

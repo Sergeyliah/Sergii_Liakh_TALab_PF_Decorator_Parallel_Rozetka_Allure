@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" data-provider-thread-count="3">
+    <test verbose="2" preserve-order="true" name="C:/Users/Sergey/IdeaProjects/Sergii_Liakh_TALab_PF_Decorator_Parallel_Rozetka">
+        <classes>
+            <class name="tests.AddToCartTests">
+                <methods>
+                    <include name="tc_001"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
