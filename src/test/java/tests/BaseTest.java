@@ -55,7 +55,7 @@ public class BaseTest {
     public void tearDown() {
         getDriver().close();
     }
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return dr.get();
     }
     public void setWebDriver(WebDriver driver){
@@ -68,7 +68,7 @@ public class BaseTest {
     public SearchResultsPage getSearchResultsPage() {
         return new SearchResultsPage(getDriver());
     }
-    public ShoppingCartPage getShoppingCartPage() {
+    public static ShoppingCartPage getShoppingCartPage() {
         return new ShoppingCartPage(getDriver());
     }
     public ProductPage getProductPage() {
