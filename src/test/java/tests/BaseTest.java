@@ -11,12 +11,14 @@ import pages.ProductPage;
 import pages.SearchResultsPage;
 import pages.ShoppingCartPage;
 import utility.Utility;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
-    public static ThreadLocal<WebDriver> dr = new ThreadLocal<WebDriver>();
+    public static ThreadLocal<WebDriver> dr = new ThreadLocal<>();
+
+    public BaseTest() {
+    }
 
     @BeforeMethod
     public void testsSetUp() throws IOException {
@@ -55,6 +57,7 @@ public class BaseTest {
     public void tearDown() {
         getDriver().close();
     }
+
     public static WebDriver getDriver() {
         return dr.get();
     }

@@ -1,6 +1,11 @@
 package tests;
 
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import utility.CaptureScreenshot;
 import utility.Utility;
 
 import javax.xml.xpath.XPathExpressionException;
@@ -11,6 +16,9 @@ public class Verify extends BaseTest{
     private static final String CURRENCY_RATE_XML_PATH = "./src/main/properties/currency_rate.xml";
     private static final String AMOUNT_OF_ITEMS = "amountOfItems";
     private static final String TOTAL_PRICE = "totalPrice";
+
+    public Verify() throws IOException {
+    }
 
     public static void verify() throws IOException, XPathExpressionException {
         Assert.assertEquals(Integer.parseInt((String) Utility.fetchPropertyValueXML(AMOUNT_OF_ITEMS)), Integer.parseInt(getShoppingCartPage().getAmountOfItems().getText()));

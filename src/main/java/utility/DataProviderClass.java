@@ -32,9 +32,7 @@ public class DataProviderClass {
         return Stream.of(
                 new Object[]{"ноутбуки", "ASUS"},
                 new Object[]{"телевизоры", "Samsung"},
-                new Object[]{"холодильники", "Samsung"},
-                new Object[]{"смартфоны", "Samsung"},
-                new Object[]{"фотоаппараты", "Olympus"}).iterator();
+                new Object[]{"холодильники", "Samsung"}).iterator();
     }
 
 
